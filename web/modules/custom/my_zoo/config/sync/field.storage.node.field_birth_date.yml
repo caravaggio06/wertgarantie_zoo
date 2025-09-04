@@ -1,0 +1,22 @@
+uuid: da3d1056-5197-4b0c-b9d3-65164b39a6a7
+langcode: de
+status: true
+dependencies:
+  module:
+    - datetime
+    - node
+_core:
+  default_config_hash: x4SVOLM9vi7R7x-T2CFjm6IZDsl4Ojcar9iPpmgYofg
+id: node.field_birth_date
+field_name: field_birth_date
+entity_type: node
+type: datetime
+settings:
+  datetime_type: datetime
+module: datetime
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

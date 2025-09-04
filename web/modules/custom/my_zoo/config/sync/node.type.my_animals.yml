@@ -1,0 +1,13 @@
+uuid: 52541541-d291-47f8-9c0b-e5b73b864450
+langcode: de
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: ao7tpKKc1GOcM-PJuj6BX7oU5rc_1isClOMyt4TPN88
+name: 'Meine Tiere'
+type: my_animals
+description: 'Tier-Inhalte für die My Zoo API'
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

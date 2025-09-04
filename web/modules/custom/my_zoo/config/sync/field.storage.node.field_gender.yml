@@ -1,0 +1,32 @@
+uuid: 99ab50c9-234e-4d22-81a0-c6cbf13da021
+langcode: de
+status: true
+dependencies:
+  module:
+    - node
+    - options
+_core:
+  default_config_hash: ueHkCSIuZzLLs4udWacGXRJyo1wiJ5uC_gmeI2RUROA
+id: node.field_gender
+field_name: field_gender
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: male
+      label: männlich
+    -
+      value: female
+      label: weiblich
+    -
+      value: unknown
+      label: unbekannt
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

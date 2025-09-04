@@ -1,0 +1,23 @@
+uuid: 2fe40161-f01e-4444-84f8-d34591467652
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_gender
+    - node.type.my_animals
+  module:
+    - options
+_core:
+  default_config_hash: IReUXcGWQjSsVXCS0W8D3540Jt1_uqrQQGELlIuCYrg
+id: node.my_animals.field_gender
+field_name: field_gender
+entity_type: node
+bundle: my_animals
+label: Geschlecht
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

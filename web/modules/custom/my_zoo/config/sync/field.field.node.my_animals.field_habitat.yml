@@ -1,0 +1,30 @@
+uuid: d99d44f6-2478-4e48-a96e-9a64630077a8
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_habitat
+    - node.type.my_animals
+    - taxonomy.vocabulary.habitat
+_core:
+  default_config_hash: Jo_gy9U7QgiJR4OxYhcX3mYAeejjdVpx_M1F0JItgCc
+id: node.my_animals.field_habitat
+field_name: field_habitat
+entity_type: node
+bundle: my_animals
+label: Lebensraum
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      habitat: habitat
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+field_type: entity_reference

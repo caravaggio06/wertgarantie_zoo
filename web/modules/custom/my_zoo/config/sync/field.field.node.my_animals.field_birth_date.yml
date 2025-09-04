@@ -1,0 +1,23 @@
+uuid: bce67a45-2f8a-4b8d-8ee5-f15e1204c536
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_birth_date
+    - node.type.my_animals
+  module:
+    - datetime
+_core:
+  default_config_hash: nuYGUUkWoCrqdt-tnmXihrf7_NPb_nMBuQmLdpTxN2o
+id: node.my_animals.field_birth_date
+field_name: field_birth_date
+entity_type: node
+bundle: my_animals
+label: Geburtsdatum
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

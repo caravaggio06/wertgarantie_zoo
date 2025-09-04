@@ -1,0 +1,11 @@
+uuid: 4497087b-01d3-44d9-8a5f-2e9a6709737e
+langcode: de
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 6aDOiQ9RpXgnDF6fWWH61VtLCU3EIHr6QMRag0g-8NI
+name: Lebensraum
+vid: habitat
+description: 'Kategorien der Lebensräume'
+weight: 0
+new_revision: false

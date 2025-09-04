@@ -1,0 +1,25 @@
+uuid: d3a88f58-a415-4f2d-85fb-66d21970ae94
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_age
+    - node.type.my_animals
+_core:
+  default_config_hash: Q27zpGYB3ugRHY658NtXOqNUdlt3F9OCLup__n33_5c
+id: node.my_animals.field_age
+field_name: field_age
+entity_type: node
+bundle: my_animals
+label: Alter
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

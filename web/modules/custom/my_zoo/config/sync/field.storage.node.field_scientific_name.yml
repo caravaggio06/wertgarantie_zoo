@@ -1,0 +1,23 @@
+uuid: 1f230825-39d8-453d-ac26-8dce3fef93fd
+langcode: de
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: BI3ynf4f6dNe9WyZcZf51IemrKMDPNTNfrrG3KcXLyY
+id: node.field_scientific_name
+field_name: field_scientific_name
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
