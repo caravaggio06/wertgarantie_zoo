@@ -1,0 +1,34 @@
+my_zoo.animals:
+  path: '/api/my_animals'
+  defaults:
+    _controller: '\Drupal\my_zoo\Controller\AnimalController::getAll'
+    _format: 'json'
+  requirements:
+    _permission: 'access content'
+
+my_zoo.animal_by_id:
+  path: '/api/my_animals/{id}'
+  defaults:
+    _controller: '\Drupal\my_zoo\Controller\AnimalController::getOne'
+    _format: 'json'
+  requirements:
+    _permission: 'access content'
+    id: '\d+'
+
+# HAL-Variante für einen einzelnen Datensatz:
+my_zoo.animal_hal:
+  path: '/api/my_animals/{id}/hal'
+  defaults:
+    _controller: '\Drupal\my_zoo\Controller\AnimalController::getOneHal'
+  requirements:
+    _permission: 'access content'
+    id: '\d+'
+
+# (Optionales Bonus-Feature)
+my_zoo.animals_stats:
+  path: '/api/my_animals/stats'
+  defaults:
+    _controller: '\Drupal\my_zoo\Controller\AnimalController::getStats'
+    _format: 'json'
+  requirements:
+    _permission: 'access content'

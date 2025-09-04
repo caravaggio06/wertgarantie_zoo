@@ -1,0 +1,26 @@
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_habitat
+    - node.type.my_animals
+    - taxonomy.vocabulary.habitat
+id: node.my_animals.field_habitat
+field_name: field_habitat
+entity_type: node
+bundle: my_animals
+label: 'Lebensraum'
+description: ''
+required: false
+translatable: true
+default_value: { }
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      habitat: habitat
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+field_type: entity_reference

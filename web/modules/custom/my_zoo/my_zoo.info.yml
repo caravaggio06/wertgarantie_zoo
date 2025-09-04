@@ -1,0 +1,14 @@
+name: 'My Zoo'
+type: module
+description: 'Stellt eine REST-API für Tierdaten bereit'
+package: Custom
+core_version_requirement: ^11
+dependencies:
+  - node
+  - taxonomy
+  - image
+  - options
+  - datetime
+  - rest
+  - serialization
+  - hal

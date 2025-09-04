@@ -1,0 +1,20 @@
+langcode: de
+status: true
+dependencies:
+  module:
+    - options
+    - node
+id: node.field_gender
+field_name: field_gender
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    - { value: male, label: 'männlich' }
+    - { value: female, label: 'weiblich' }
+    - { value: unknown, label: 'unbekannt' }
+module: options
+cardinality: 1
+translatable: true
+persist_with_no_fields: false
+custom_storage: false

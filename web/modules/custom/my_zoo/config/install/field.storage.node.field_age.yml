@@ -1,0 +1,19 @@
+langcode: de
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_age
+field_name: field_age
+entity_type: node
+type: integer
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+module: core
+cardinality: 1
+translatable: false
+persist_with_no_fields: false
+custom_storage: false

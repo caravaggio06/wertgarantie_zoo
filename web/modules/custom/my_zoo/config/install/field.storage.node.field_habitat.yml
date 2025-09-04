@@ -1,0 +1,17 @@
+langcode: de
+status: true
+dependencies:
+  module:
+    - taxonomy
+    - node
+id: node.field_habitat
+field_name: field_habitat
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+cardinality: -1
+translatable: true
+persist_with_no_fields: false
+custom_storage: false

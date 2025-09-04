@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Install/Update hooks for my_zoo.
+ */
+
+use Drupal\taxonomy\Entity\Term;
+
+/**
+ * Implements hook_install().
+ */
+function my_zoo_install(): void {
+  // Ein paar Beispiel-Habitate anlegen (falls noch nicht vorhanden).
+  $defaults = ['forest', 'woodlands', 'scrub', 'grasslands', 'desert'];
+  foreach ($defaults as $name) {
+    $existing = \Drupal::entityTypeManager()
+      ->getStorage('taxonomy_term')
+      ->loadByProperties(['vid' => 'habitat', 'name' => $name]);
+    if (!$existing) {
+      Term::create(['vid' => 'habitat', 'name' => $name])->save();
+    }
+  }
+}

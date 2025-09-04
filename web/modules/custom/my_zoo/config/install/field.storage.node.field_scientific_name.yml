@@ -1,0 +1,18 @@
+langcode: de
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_scientific_name
+field_name: field_scientific_name
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+cardinality: 1
+translatable: true
+persist_with_no_fields: false
+custom_storage: false

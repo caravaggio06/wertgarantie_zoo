@@ -1,0 +1,7 @@
+langcode: de
+status: true
+name: 'Lebensraum'
+vid: habitat
+description: 'Kategorien der Lebensräume'
+weight: 0
+hierarchy: 0
