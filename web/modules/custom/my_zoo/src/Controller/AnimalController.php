@@ -1,5 +1,15 @@
 <?php
 
+/**
+ * Code-Quality Highlight:
+ * - Caching: Wir variieren nach Query-Param 'habitat' (Cache Context) und taggen pro Node.
+ *   So bleiben Antworten schnell und invalidieren sauber bei Änderungen.
+ * - HAL-Ausgabe: Für HAL verwenden wir den Serializer und setzen CacheableResponse
+ *   (kein render array), damit Header + Cache korrekt sind.
+ * - Service-Schicht: Controller bleibt dünn; Mapping/Queries stecken in MyZooService.
+ */
+
+
 declare(strict_types=1);
 
 namespace Drupal\my_zoo\Controller;
